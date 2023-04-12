@@ -1,0 +1,49 @@
+/* styling the main elements that are going to be used in every html page */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    background-color: #A4A2C8;
+}
+/* header navbar styling */
+header{
+    display:flex;
+    flex-direction: column;
+}
+header nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5px;
+    font-family:;
+}
+header a{
+    text-decoration: none;
+    color: #000;
+    font-weight:800;
+    font-size:1.2rem;
+}
+/* section element banner image */
+#banner img{
+   display:flex;
+   width:100%;
+   flex-direction:column;
+   background-size:cover;
+   margin:0;
+}
+/* styling the navbar and a footer */
+#socials, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:8px;
+}
+#socials p{
+    margin:5px;
+    font-weight:800;
+}

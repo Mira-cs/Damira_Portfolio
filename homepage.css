@@ -1,0 +1,70 @@
+/* homepage styling */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+#favorite{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#about-me,#blog-1, #blog-2, #blog-3{
+    background: #BED4C7;
+    margin:8px;
+    border:2px solid #B88475;
+}
+#about-me{
+display:flex;
+align-items: center;
+}
+#about img{
+    display:flex;
+   width:30%;
+    margin:10px;
+    }
+#about p{
+    display:inline-flex;
+    align-items:center;
+}
+#favorite img{
+    width:40%;
+    display:block;
+    margin:0 auto;
+    border-radius:100%;
+}
+#favorite p, a{
+    display:inline-flex;
+    font-weight:800;
+    color:black;
+}
+
+#favorite p{
+    width:50%;
+    justify-content:start;
+    margin:0 0 8px 8px;
+}
+#favorite a{
+    justify-content:end;
+    width:40%;
+    text-decoration: none;
+}
+h1{
+    font-weight:800;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    margin: 10px;
+    font-family:'Libre Baskerville',Helvetica, serif;
+    font-size:1.7rem;
+    }
+article{
+    margin:8px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin:8px;
+    font-size:1.4rem;
+}
+
+
+   
