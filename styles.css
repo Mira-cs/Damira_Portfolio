@@ -1,5 +1,5 @@
 /* styling the main elements that are going to be used in every html page */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display&display=swap');
 *{
     box-sizing: border-box;
     margin:0;
@@ -28,6 +28,10 @@ header a{
     font-weight:800;
     font-size:1.2rem;
 }
+header a:hover{
+   color: grey;
+}
+
 /* section element banner image */
 #banner img{
    display:flex;
