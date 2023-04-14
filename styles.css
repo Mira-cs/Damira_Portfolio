@@ -8,7 +8,7 @@
 body{
     display:flex;
     flex-direction:column;
-    background-color: #A4A2C8;
+    background-color: #dde8f8;
 }
 /* header navbar styling */
 header{
@@ -20,7 +20,6 @@ header nav{
     flex-direction: column;
     align-items: center;
     margin:5px;
-    font-family:;
 }
 header a{
     text-decoration: none;
@@ -29,13 +28,14 @@ header a{
     font-size:1.2rem;
 }
 header a:hover{
-   color: grey;
+   color: #f4edf6;
 }
 
-/* section element banner image */
+/* section banner image after header*/
 #banner img{
    display:flex;
    width:100%;
+   height:15vh;
    flex-direction:column;
    background-size:cover;
    margin:0;
@@ -53,9 +53,47 @@ header a:hover{
 }
 /* Tablet responsiveness */
 @media only screen and (min-width:600px){
+    /* increasing header font,adding margin around header and aligning the elements */
+   header{
+    margin:20px;
+   }
+  header a{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:1.5rem;
+  }
+  /* making the socials navbar stay positioned in a row and adding some margin between the imgs */
+  #socials{
+    display:flex;
+    flex-direction:column;
+}
+#socials nav{
+    display:flex;
+    flex-direction:row;
+}
+#socials img{
+    margin:5px;
+}
+}
+/* Desktop Responsiveness */
+@media only screen and (min-width:1000px){
     header nav{
         display:flex;
-        margin:10px;
-        font-size:1rem;
-    }
+        flex-direction:row;
+        justify-content:flex-end;
+        font-size:1.7rem;
+        margin:15px;
+        }
+        header a{
+            padding:10px;
+        }
+        #banner img{
+            display:flex;
+            width:100%;
+            height:25vh;
+            flex-direction:column;
+            margin:0;
+         }
+         
 }

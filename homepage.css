@@ -1,21 +1,29 @@
-/* homepage styling */
+/* homepage "about me" and "blog posts" styling */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+/* blog posts section layout */
 #favorite{
     display:flex;
     flex-direction: column;
     align-items:center;
 }
+/* about me section layout */
 #about{
     width:100%;
 }
-#about-me,#blog-1, #blog-2, #blog-3{
-    background: #BED4C7;
+/* adding some styling to about me and blog posts sections */
+#about-me, #first-two section, #second-two section, #book {
+    background: #f4edf6;
     margin:8px;
-    border:2px solid #B88475;
+    border:2px solid #eadeec;
 }
 #about-me{
 display:flex;
 align-items: center;
+padding:10px;
+}
+#about img, #favorite img{
+    filter: brightness(80%);
+    border:2px solid #eadeec;
 }
 #about img{
     display:flex;
@@ -27,6 +35,7 @@ align-items: center;
     align-items:center;
     font-family: 'Playfair Display',Helvetica,Arial, serif;
 }
+/* making the imgs centered and positioned above the text */
 #favorite img{
     width:40%;
     display:block;
@@ -38,7 +47,7 @@ align-items: center;
     font-weight:800;
     color:black;
 }
-
+/* making date and read more (p&a) positioned on the opposite ends of the container */
 #favorite p{
     width:50%;
     justify-content:start;
@@ -52,11 +61,10 @@ align-items: center;
 #favorite a:hover{
     text-decoration: underline;
 }
+/* styling the text content */
 h1, h2{
     font-weight:800;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    text-align:center;
     width:100%;
     margin: 10px;
     font-family:'Libre Baskerville',Helvetica,Arial, serif;
@@ -73,10 +81,11 @@ article{
 h3{
     text-align: center;
     margin:8px;
-    font-size:1.4rem;
+    font-size:1.2rem;
 }
 /* Tablet Responsiveness */
 @media only screen and (min-width:750px){
+    /* making sure the picture is positioned above the text and centered */
     #about-me{
         display:flex;
         flex-direction:column;
@@ -87,15 +96,86 @@ h3{
     margin:8px;
     text-align:center;
     }
-    #blog-1{
+    /* making blog posts position next to each other (2 on one row) */
+    #first-two, #second-two{
         display:flex;
         flex-direction:row;
+        width:100%;
+        border:none;
     }
-    #blog-1 section{
-    margin:8px;
-    border:2px solid #B88475;
-    flex:1;
+    #first-two section, #second-two section{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+       width:100%;
+       border:2px solid #eadeec;
+       background-color: #f4edf6;
+       padding:10px 5px 20px 5px;
+       margin:5px;
     }
+    /* adding margins and adjusting the imgs sizes */
+    #date-readmore{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width:100%;
+        align-items:flex-end;
+    }
+    #blog img{
+        width:50%;
+    }
+    #favorite h1{
+        margin:30px 0 0 0;
+    }
+    #favorite h2{
+        margin:0 0 30px 0;
+    }
+    h3{
+        margin: 20px;
+    }
+    #book{
+        display:flex;
+        flex-direction:column;
+        width:50%;
+        padding:10px 5px 20px 5px;
+    }
+    #book img{
+        width:35%;
+    }
+    }
+/* Desktop Responsiveness */
+@media only screen and (min-width:1000px){
+    /* centering the content and the container itself */
+#about-me{
+    display:flex;
+    flex-direction: row;
+    width:45%;
+    height:50vh;
 }
+#about-me p{
+    font-size:1.6rem;
+}
+#favorite{
+    width:100%;
+}
+#first-two, #second-two{
+    width:60%;
+}
+#book{
+    width:45%;
+}
+}
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+    
 
    
