@@ -1,0 +1,129 @@
+/* homepage "about me" and "blog posts" styling */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+/* blog posts section layout */
+#favorite{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+/* adding some styling to about me and blog posts sections */
+#first-two section, #second-two section, #book {
+    background: #f4edf6;
+    margin:8px;
+    border:2px solid #eadeec;
+}
+
+/* making the imgs centered and positioned above the text */
+#favorite img{
+    width:40%;
+    display:block;
+    margin:0 auto;
+    border-radius:100%;
+    filter: brightness(80%);
+    border:2px solid #eadeec;
+}
+#favorite p{
+    display:inline-flex;
+    font-weight:800;
+    color:black;
+    width:100%;
+    justify-content:center;
+    margin-top:auto;
+}
+/* styling the text content */
+h1, h2{
+    font-weight:800;
+    text-align:center;
+    width:100%;
+    margin: 10px;
+    }
+h1{
+    font-size:1.7rem;
+}
+article{
+    margin:25px 0;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin:8px;
+    font-size:1.2rem;
+}
+/* Tablet Responsiveness */
+@media only screen and (min-width:750px){
+/* making blog posts position next to each other (2 on one row) */
+#first-two, #second-two{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    border:none;
+    }
+#first-two section, #second-two section{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    width:100%;
+    border:2px solid #eadeec;
+    background-color: #f4edf6;
+    padding:10px 5px 20px 5px;
+    margin:5px;
+    }
+    /* adding margins and adjusting the imgs sizes */
+#date-readmore{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width:100%;
+    align-items:flex-end;
+    }
+#blog img{
+    width:50%;
+    }
+#favorite h1{
+    margin:30px 0 0 0;
+    }
+#favorite h2{
+    margin:0 0 30px 0;
+    }
+h3{
+    margin: 20px;
+    }
+#book{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    padding:10px 5px 20px 5px;
+    }
+#book img{
+    width:35%;
+    }
+    }
+/* Desktop Responsiveness */
+@media only screen and (min-width:1000px){
+    /* centering the content and the container itself */
+h1{
+    font-size:2rem;
+}
+#about-me{
+    display:flex;
+    flex-direction: row;
+    width:45%;
+    overflow: hidden;
+}
+#about-me p{
+    font-size:1.2rem;
+}
+#favorite{
+    width:100%;
+}
+#first-two, #second-two{
+    width:60%;
+}
+#book{
+    width:35%;
+}
+#first-two, #second-two, #book article{
+font-size:100%;
+margin:15px;
+}
+}

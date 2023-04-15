@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display:wght@400;800&display=swap');
+h1,h2{
+    margin:15px;
+    text-align:center;
+}
+h1{
+    font-size:1.5rem;
+    margin:40px 0 40px 0;
+}
+h2{
+    font-size: 1.2rem;
+}
+#years p{
+    margin:40px 0 40px 0;
+    padding:1px;
+}
+/* making the sections centered and styling them */
+#entire-page, #places{
+    width:100%;
+}
+#background{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0 20px 0 20px;
+}
+#years {
+    width:80%;
+    background: #f4edf6;
+    margin:8px 0 0 8px;
+    border:2px solid #eadeec;
+    margin:15px;
+}
+/* making the text (p) position next to the image (figure) */
+#resume{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+    margin:40px 10px 40px 10px;
+}
+/* making the workplaces section position items in a row, next to one another */
+#workplaces{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+/* styling the images */
+/* making the three images position next to each other */
+#workplaces figure{ 
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#workplaces img,#resume img{
+    filter: brightness(80%);
+    border:2px solid #eadeec;
+}
+#workplaces img{
+    width:70%;
+    border-radius: 100%;
+}
+#resume img{
+    width: 50%;
+    background-color: #9eafa4;
+}
+
+
+/* at 650px the text is too stretched out and small*/
+@media only screen and (min-width:650px){
+#years {
+        width:60%;
+}
+#years p {
+        font-size:1.3rem;
+}
+#resume img{
+    width: 30%;
+}
+}
+/* Desktop Responsiveness */
+@media only screen and (min-width:900px){
+/* making the background section position on the left side of the screen */
+#entire-page{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+#background{
+    width:50%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    }
+#background p{
+    font-size:1.2rem;
+    }
+#years{
+    width:100%;
+}
+#places{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    width:50%;
+}
+#resume{
+    width:100%;
+}
+#resume p{
+    width:40%;
+    font-size:1.2rem;
+}
+h1{
+    font-size:2rem;
+}
+h2{
+    font-size:1.5rem;
+}
+}
+@media only screen and (min-width:1300px){
+    #background{
+        width:50%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: start;
+        margin:0 0 0 30px;
+        }
+    #fourteen,#sixteen,#career-path{
+        width: 70%;
+    }
+ 
+}

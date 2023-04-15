@@ -10,6 +10,12 @@ body{
     flex-direction:column;
     background-color: #dde8f8;
 }
+p,article,li{
+    font-family:'Playfair Display',Helvetica,Arial, serif;
+}
+h1,h2,h3{
+    font-family:'Libre Baskerville',Helvetica,Arial, serif;
+}
 /* header navbar styling */
 header{
     display:flex;
@@ -28,7 +34,7 @@ header a{
     font-size:1.2rem;
 }
 header a:hover{
-   color: #f4edf6;
+   color: grey;
 }
 
 /* section banner image after header*/

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display&display=swap');
+h1{
+    text-align:center;
+    margin:15px;
+}
+/* div container for the first section of text */
 #facts-me{
     display:flex;
     flex-direction:column;
@@ -8,23 +13,34 @@
 #container-facts{
     background: #f4edf6;
     border:2px solid #eadeec;
-    width:85%;
+    width:90%;
     margin:10px;
-    padding:10px;
 }
-section h1{
+/* div container for the second section of text */
+#facts-me2{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+#container-facts2{
+    background: #f4edf6;
+    border:2px solid #eadeec;
+    width: 90%;
+    margin:10px;
+}
+section h2{
     text-align:center;
-    font-family:'Libre Baskerville',Helvetica,Arial, serif;
     margin:15px;
 }
 li{
-    font-family:"Playfair Display", Arial, Helvetica, serif;
     color:black;
     font-weight:800;
     margin:15px;
     padding:10px;
     list-style-position: inside;
 }
+/* styling the images */
 figure{
     width:100%;
     display:flex;
@@ -60,10 +76,16 @@ figcaption{
 }
 /* Desktop Responsiveness (just the font) */
 @media only screen and (min-width:1000px){
-    #container-facts h1{
+    #container-facts h2,#container-facts2 h2{
+        font-size:1.5rem;
+    }
+    h1{
         font-size:2rem;
     }
     li{
         font-size:1.3rem;
+    }
+    h1{
+        font-size:2.4rem;
     }
 }

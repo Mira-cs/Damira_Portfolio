@@ -5,43 +5,48 @@
     display:flex;
     flex-direction: column;
     align-items:center;
+    width:100%;
+}
+/* making blog posts divs not take the entire width */
+#first-two, #second-two, #book{
+    width:90%;
 }
 /* about me section layout */
 #about{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
     width:100%;
 }
 /* adding some styling to about me and blog posts sections */
-#about-me, #first-two section, #second-two section, #book {
+.hello, #first-two section, #second-two section, #book {
     background: #f4edf6;
     margin:8px;
     border:2px solid #eadeec;
 }
-#about-me{
-display:flex;
-align-items: center;
-padding:10px;
+/* div that wraps two paragraphs in introduction */
+#introduction{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }
-#about img, #favorite img{
+/* paragraphs */
+.hello{
+    width:90%;
+    padding:10px;
+}
+/* my image */
+#about img{
     filter: brightness(80%);
     border:2px solid #eadeec;
-}
-#about img{
-    display:flex;
-   width:30%;
+    width: 50%;
     margin:10px;
-    }
+}
 #about p{
-    display:inline-flex;
     align-items:center;
-    font-family: 'Playfair Display',Helvetica,Arial, serif;
 }
 /* making the imgs centered and positioned above the text */
-#favorite img{
-    width:40%;
-    display:block;
-    margin:0 auto;
-    border-radius:100%;
-}
 #favorite p, a{
     display:inline-flex;
     font-weight:800;
@@ -52,11 +57,13 @@ padding:10px;
     width:50%;
     justify-content:start;
     margin:0 0 8px 8px;
+    margin-top:auto;
 }
 #favorite a{
     justify-content:end;
     width:40%;
     text-decoration: none;
+    margin-top:auto;
 }
 #favorite a:hover{
     text-decoration: underline;
@@ -64,108 +71,122 @@ padding:10px;
 /* styling the text content */
 h1, h2{
     font-weight:800;
-    text-align:center;
     width:100%;
     margin: 10px;
-    font-family:'Libre Baskerville',Helvetica,Arial, serif;
     }
 h1{
     font-size:1.7rem;
-}
-
-article{
-    margin:8px;
-    text-align: center;
-    font-family: 'Playfair Display',Helvetica,Arial, serif;
+    margin: 20px 0 20px 0;
 }
 h3{
-    text-align: center;
-    margin:8px;
     font-size:1.2rem;
 }
+article{
+    margin:8px;
+}
+h1, h2, h3, article{
+    text-align: center;
+}
 /* Tablet Responsiveness */
-@media only screen and (min-width:750px){
-    /* making sure the picture is positioned above the text and centered */
-    #about-me{
-        display:flex;
-        flex-direction:column;
-        width:70%;
-        margin:0 auto;
+@media only screen and (min-width:600px){
+/* making sure the picture is positioned above the text and centered */
+#about{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    width:100%;
+}
+#introduction{
+    width:50%;
+}
+.hello{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
     }
-    #about-me p{
+#about img{
+    width:30%;
+    margin:0 15px 0 0;
+}
+.about-me p{
     margin:8px;
     text-align:center;
     }
-    /* making blog posts position next to each other (2 on one row) */
-    #first-two, #second-two{
-        display:flex;
-        flex-direction:row;
-        width:100%;
-        border:none;
+/* making blog posts position next to each other (2 on one row) */
+#first-two, #second-two{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    border:none;
     }
-    #first-two section, #second-two section{
-        display:flex;
-        flex-direction:column;
-        justify-content:flex-start;
-       width:100%;
-       border:2px solid #eadeec;
-       background-color: #f4edf6;
-       padding:10px 5px 20px 5px;
-       margin:5px;
+#first-two section, #second-two section{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    width:100%;
+    border:2px solid #eadeec;
+    background-color: #f4edf6;
+    padding:10px 5px 20px 5px;
+    margin:5px;
     }
-    /* adding margins and adjusting the imgs sizes */
-    #date-readmore{
-        display:flex;
-        flex-direction: row;
-        justify-content:space-between;
-        width:100%;
-        align-items:flex-end;
+/* adding margins and adjusting the imgs sizes */
+#date-readmore{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width:100%;
+    align-items:flex-end;
     }
-    #blog img{
-        width:50%;
+#favorite h1{
+    margin:30px 0 30px 0;
     }
-    #favorite h1{
-        margin:30px 0 0 0;
+#favorite h2{
+    margin:0 0 30px 0;
     }
-    #favorite h2{
-        margin:0 0 30px 0;
+h3{
+    margin: 20px;
     }
-    h3{
-        margin: 20px;
+#book{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    padding:10px 5px 20px 5px;
     }
-    #book{
-        display:flex;
-        flex-direction:column;
-        width:50%;
-        padding:10px 5px 20px 5px;
-    }
-    #book img{
-        width:35%;
+#book img{
+    width:35%;
     }
     }
 /* Desktop Responsiveness */
 @media only screen and (min-width:1000px){
-    /* centering the content and the container itself */
-#about-me{
-    display:flex;
-    flex-direction: row;
-    width:45%;
-    height:50vh;
+/* centering the content and the container itself */
+#introduction{
+        width:60%;
+    }
+#about img{
+    width:15%;
 }
-#about-me p{
-    font-size:1.6rem;
+h1{
+    font-size:2rem;
+}
+.hello p{
+    font-size:1.2rem;
 }
 #favorite{
     width:100%;
 }
 #first-two, #second-two{
-    width:60%;
+    width:80%;
 }
 #book{
-    width:45%;
+    width:50%;
+}
+#first-two, #second-two, #book article{
+font-size:100%;
+margin:15px;
 }
 }
-   
+
    
    
    
