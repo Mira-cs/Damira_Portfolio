@@ -16,34 +16,48 @@ p,article,li{
 h1,h2,h3{
     font-family:'Libre Baskerville',Helvetica,Arial, serif;
 }
+h1{
+    font-size:1.5rem;
+}
+h2{
+    font-size:1.3rem;
+}
+h3{
+    font-size:1rem;
+}
+p, article, li{
+    font-size:0.7rem;
+}
 /* header navbar styling */
+header img{
+    width:30%;
+    margin: 15px 0;
+}
 header{
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 header nav{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin:5px;
 }
 header a{
     text-decoration: none;
     color: #000;
     font-weight:800;
     font-size:1.2rem;
+    margin:10px;
 }
 header a:hover{
    color: grey;
 }
 
-/* section banner image after header*/
+/* making banner image cover the whole width*/
 #banner img{
-   display:flex;
    width:100%;
    height:15vh;
-   flex-direction:column;
-   background-size:cover;
    margin:0;
 }
 /* styling the navbar and a footer */
@@ -59,18 +73,21 @@ header a:hover{
 }
 /* Tablet responsiveness */
 @media only screen and (min-width:600px){
-    /* increasing header font,adding margin around header and aligning the elements */
-   header{
+/* increasing header font,adding margin around header and aligning the elements */
+header{
     margin:20px;
    }
-  header a{
+header img{
+    width:25%;
+   }
+header a{
     display:flex;
     flex-direction:column;
     align-items:center;
     font-size:1.5rem;
   }
-  /* making the socials navbar stay positioned in a row and adding some margin between the imgs */
-  #socials{
+/* making the socials navbar stay positioned in a row and adding some margin between the imgs */
+#socials{
     display:flex;
     flex-direction:column;
 }
@@ -81,25 +98,52 @@ header a:hover{
 #socials img{
     margin:5px;
 }
+h1{
+    font-size:1.7rem;
+}
+h2{
+    font-size:1.5rem;
+}
+h3{
+    font-size:1.3rem;
+}
+p, article, li{
+    font-size:1rem;
+}
 }
 /* Desktop Responsiveness */
 @media only screen and (min-width:1000px){
-    header nav{
-        display:flex;
-        flex-direction:row;
-        justify-content:flex-end;
-        font-size:1.7rem;
-        margin:15px;
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    }
+header nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    font-size:1.7rem;
+    margin:0;
+    }
+header img{
+    width:8%;
+    display:flex;
+    flex-direction:row;
         }
-        header a{
-            padding:10px;
-        }
-        #banner img{
-            display:flex;
-            width:100%;
-            height:25vh;
-            flex-direction:column;
-            margin:0;
+#banner img{
+    height:25vh;
          }
-         
+/*styling fonts for all the html pages  */
+h1{
+    font-size:2rem;
+}
+h2{
+    font-size:1.6rem;
+}
+h3{
+    font-size:1.4rem;
+}
+p{
+    font-size:1.2rem;
+}
 }

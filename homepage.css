@@ -1,14 +1,14 @@
 /* homepage "about me" and "blog posts" styling */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 /* blog posts section layout */
-#favorite{
+#blog{
     display:flex;
     flex-direction: column;
     align-items:center;
     width:100%;
 }
 /* making blog posts divs not take the entire width */
-#first-two, #second-two, #book{
+#first-posts, #second-posts, #book-post{
     width:90%;
 }
 /* about me section layout */
@@ -19,7 +19,7 @@
     width:100%;
 }
 /* adding some styling to about me and blog posts sections */
-.hello, #first-two section, #second-two section, #book {
+.hello, #first-posts section, #second-posts section, #book-post {
     background: #f4edf6;
     margin:8px;
     border:2px solid #eadeec;
@@ -46,43 +46,67 @@
 #about p{
     align-items:center;
 }
-/* making the imgs centered and positioned above the text */
-#favorite p, a{
+#contact-info{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+#contact-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+figure{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width:50%;
+}
+figure img{
+    width:20%; 
+}
+figcaption{
+    width:70%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+#blog p, a{
     display:inline-flex;
     font-weight:800;
     color:black;
 }
 /* making date and read more (p&a) positioned on the opposite ends of the container */
-#favorite p{
+#blog p{
     width:50%;
     justify-content:start;
     margin:0 0 8px 8px;
     margin-top:auto;
 }
-#favorite a{
+#blog a{
     justify-content:end;
     width:40%;
     text-decoration: none;
     margin-top:auto;
 }
-#favorite a:hover{
+#blog a:hover{
     text-decoration: underline;
 }
 /* styling the text content */
 h1, h2{
     font-weight:800;
-    width:100%;
-    margin: 10px;
     }
 h1{
-    font-size:1.7rem;
-    margin: 20px 0 20px 0;
+    margin: 40px 0 20px 0;
 }
 h3{
-    font-size:1.2rem;
+    margin:10px;
 }
 article{
-    margin:8px;
+    margin:10px;
 }
 h1, h2, h3, article{
     text-align: center;
@@ -113,14 +137,42 @@ h1, h2, h3, article{
     margin:8px;
     text-align:center;
     }
+#contact-info{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    border:2px solid #eadeec;
+    margin:20px 0;
+    }
+#contact-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: start;
+    }
+figure{
+    width:70%;
+    }
+figure img{
+    width:30%; 
+    }
+figcaption{
+    width:80%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    }
 /* making blog posts position next to each other (2 on one row) */
-#first-two, #second-two{
+#first-posts, #second-posts{
     display:flex;
     flex-direction:row;
     width:100%;
     border:none;
     }
-#first-two section, #second-two section{
+#first-posts section, #second-posts section{
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -138,22 +190,22 @@ h1, h2, h3, article{
     width:100%;
     align-items:flex-end;
     }
-#favorite h1{
+#blog h1{
     margin:30px 0 30px 0;
     }
-#favorite h2{
+#blog h2{
     margin:0 0 30px 0;
     }
 h3{
     margin: 20px;
     }
-#book{
+#book-post{
     display:flex;
     flex-direction:column;
     width:50%;
     padding:10px 5px 20px 5px;
     }
-#book img{
+#book-post img{
     width:35%;
     }
     }
@@ -161,29 +213,23 @@ h3{
 @media only screen and (min-width:1000px){
 /* centering the content and the container itself */
 #introduction{
-        width:60%;
+    width:60%;
     }
 #about img{
     width:15%;
 }
-h1{
-    font-size:2rem;
-}
-.hello p{
-    font-size:1.2rem;
-}
-#favorite{
+#blog{
     width:100%;
 }
-#first-two, #second-two{
+#first-posts, #second-posts{
     width:80%;
 }
 #book{
     width:50%;
 }
-#first-two, #second-two, #book article{
-font-size:100%;
-margin:15px;
+#first-posts, #second-posts, #book-post article{
+    font-size:100%;
+    margin:15px;
 }
 }
 

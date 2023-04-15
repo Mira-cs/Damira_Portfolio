@@ -1,82 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display:wght@400;800&display=swap');
 h1,h2{
-    margin:15px;
+    margin:20px;
     text-align:center;
 }
 h1{
-    font-size:1.5rem;
-    margin:40px 0 40px 0;
-}
-h2{
-    font-size: 1.2rem;
+    margin:30px 0 15px 0;
 }
 #years p{
     margin:40px 0 40px 0;
-    padding:1px;
+}
+#resume p{
+    width:70%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
 }
 /* making the sections centered and styling them */
-#entire-page, #places{
+#entire-page, #workplaces{
     width:100%;
 }
 #background{
-    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
     margin:0 20px 0 20px;
 }
 #years {
-    width:80%;
+    width:100%;
     background: #f4edf6;
     margin:8px 0 0 8px;
     border:2px solid #eadeec;
     margin:15px;
+    padding:10px;
 }
-/* making the text (p) position next to the image (figure) */
+/* making the text (p) position next to the image (cv icon */
 #resume{
     display:flex;
     flex-direction:row;
     justify-content:center;
     width:100%;
-    margin:40px 10px 40px 10px;
+    margin:25px 0;
 }
-/* making the workplaces section position items in a row, next to one another */
-#workplaces{
+/* making the workplaces (3 images) section position items in a row, next to one another */
+#img-workplaces{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
-}
+  }
+figcaption{
+    margin:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 /* styling the images */
 /* making the three images position next to each other */
-#workplaces figure{ 
+#img-workplaces figure{ 
     display:flex;
     flex-direction: row;
     justify-content:center;
 }
-#workplaces img,#resume img{
+#img-workplaces img,#resume img{
     filter: brightness(80%);
     border:2px solid #eadeec;
 }
-#workplaces img{
-    width:70%;
+#img-workplaces img{
+    width:40%;
     border-radius: 100%;
 }
 #resume img{
-    width: 50%;
+    width: 50px;
     background-color: #9eafa4;
+    margin:0 5px;
 }
-
 
 /* at 650px the text is too stretched out and small*/
 @media only screen and (min-width:650px){
 #years {
-        width:60%;
+    width:90%;
 }
-#years p {
-        font-size:1.3rem;
+#img-workplaces img{
+    width:25%;
 }
+/* getting rid of that extra */
 #resume img{
-    width: 30%;
+    width: 60px;
 }
 }
 /* Desktop Responsiveness */
@@ -94,45 +104,29 @@ h2{
     flex-wrap:wrap;
     justify-content: center;
     }
-#background p{
-    font-size:1.2rem;
-    }
 #years{
     width:100%;
 }
-#places{
+#workplaces{
     display:flex;
     flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     margin:0;
     width:50%;
 }
-#resume{
-    width:100%;
-}
-#resume p{
-    width:40%;
-    font-size:1.2rem;
-}
-h1{
-    font-size:2rem;
-}
-h2{
-    font-size:1.5rem;
-}
+#img-workplaces figure{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+  }
 }
 @media only screen and (min-width:1300px){
-    #background{
-        width:50%;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content: start;
-        margin:0 0 0 30px;
-        }
-    #fourteen,#sixteen,#career-path{
-        width: 70%;
+#background{
+    width:50%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: start;
+    margin:0 0 0 30px;
     }
- 
 }

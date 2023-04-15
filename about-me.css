@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display&display=swap');
+/* styling the text */
 h1{
     text-align:center;
     margin:15px;
 }
+section h2{
+    text-align:center;
+    margin:15px;
+}
+li{
+    color:black;
+    font-weight:800;
+    margin:15px;
+    padding:10px;
+    list-style-position: inside;
+}
+figcaption{
+    margin:5px 0 30px 0;
+    font-weight:800;
+}
 /* div container for the first section of text */
-#facts-me{
+#facts-me1{
     display:flex;
     flex-direction:column;
     align-items:center;
     width:100%;
 }
-#container-facts{
+#container-facts1{
     background: #f4edf6;
     border:2px solid #eadeec;
     width:90%;
@@ -29,17 +45,6 @@ h1{
     width: 90%;
     margin:10px;
 }
-section h2{
-    text-align:center;
-    margin:15px;
-}
-li{
-    color:black;
-    font-weight:800;
-    margin:15px;
-    padding:10px;
-    list-style-position: inside;
-}
 /* styling the images */
 figure{
     width:100%;
@@ -52,10 +57,6 @@ figure img{
     width:60%;
     filter: brightness(80%);
     border:2px solid #eadeec;
-}
-figcaption{
-    margin:5px 0 30px 0;
-    font-weight:800;
 }
 /* Tablet Responsiveness */
 @media only screen and (min-width:750px){
@@ -76,16 +77,8 @@ figcaption{
 }
 /* Desktop Responsiveness (just the font) */
 @media only screen and (min-width:1000px){
-    #container-facts h2,#container-facts2 h2{
-        font-size:1.5rem;
-    }
-    h1{
-        font-size:2rem;
-    }
     li{
         font-size:1.3rem;
     }
-    h1{
-        font-size:2.4rem;
-    }
+ 
 }

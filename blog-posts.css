@@ -1,20 +1,20 @@
 /* homepage "about me" and "blog posts" styling */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 /* blog posts section layout */
-#favorite{
+#blog{
     display:flex;
     flex-direction: column;
     align-items:center;
 }
 /* adding some styling to about me and blog posts sections */
-#first-two section, #second-two section, #book {
+#first-posts section, #second-posts section, #book-post {
     background: #f4edf6;
     margin:8px;
     border:2px solid #eadeec;
 }
 
 /* making the imgs centered and positioned above the text */
-#favorite img{
+#blog img{
     width:40%;
     display:block;
     margin:0 auto;
@@ -22,7 +22,7 @@
     filter: brightness(80%);
     border:2px solid #eadeec;
 }
-#favorite p{
+#blog p{
     display:inline-flex;
     font-weight:800;
     color:black;
@@ -37,9 +37,6 @@ h1, h2{
     width:100%;
     margin: 10px;
     }
-h1{
-    font-size:1.7rem;
-}
 article{
     margin:25px 0;
     text-align: center;
@@ -47,18 +44,17 @@ article{
 h3{
     text-align: center;
     margin:8px;
-    font-size:1.2rem;
 }
 /* Tablet Responsiveness */
 @media only screen and (min-width:750px){
 /* making blog posts position next to each other (2 on one row) */
-#first-two, #second-two{
+#first-posts, #second-posts{
     display:flex;
     flex-direction:row;
     width:100%;
     border:none;
     }
-#first-two section, #second-two section{
+#first-posts section, #second-posts section{
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -68,62 +64,49 @@ h3{
     padding:10px 5px 20px 5px;
     margin:5px;
     }
-    /* adding margins and adjusting the imgs sizes */
-#date-readmore{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    width:100%;
-    align-items:flex-end;
-    }
+/* adding margins and adjusting the imgs sizes */
 #blog img{
     width:50%;
     }
-#favorite h1{
+#blog h1{
     margin:30px 0 0 0;
     }
-#favorite h2{
+#blog h2{
     margin:0 0 30px 0;
     }
 h3{
-    margin: 20px;
+    margin:20px;
     }
-#book{
+#book-post{
     display:flex;
     flex-direction:column;
     width:50%;
     padding:10px 5px 20px 5px;
     }
-#book img{
+#book-post img{
     width:35%;
     }
     }
 /* Desktop Responsiveness */
 @media only screen and (min-width:1000px){
-    /* centering the content and the container itself */
-h1{
-    font-size:2rem;
-}
+/* centering the content and the container itself */
 #about-me{
     display:flex;
     flex-direction: row;
     width:45%;
     overflow: hidden;
 }
-#about-me p{
-    font-size:1.2rem;
-}
-#favorite{
+#blog{
     width:100%;
 }
-#first-two, #second-two{
+#first-posts, #second-posts{
     width:60%;
 }
-#book{
+#book-post{
     width:35%;
 }
-#first-two, #second-two, #book article{
-font-size:100%;
-margin:15px;
+#first-posts, #second-posts, #book-post article{
+    font-size:100%;
+    margin:15px;
 }
 }
