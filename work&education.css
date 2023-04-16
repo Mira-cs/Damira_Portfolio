@@ -69,6 +69,7 @@ figcaption{
 #img-workplaces img{
     width:40%;
     border-radius: 100%;
+    margin:10px 0;
 }
 #resume img{
     width: 50px;
