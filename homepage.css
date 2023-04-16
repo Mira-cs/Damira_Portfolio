@@ -120,9 +120,6 @@ article{
 h1, h2, h3, h4, article{
     text-align: center;
 }
-figcaption{
-    font-size:0.8rem;
-}
 /* Tablet Responsiveness */
 @media only screen and (min-width:600px){
 /* making sure the picture is positioned above the text and centered */

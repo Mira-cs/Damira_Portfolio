@@ -4,7 +4,7 @@ h1,h2{
     text-align:center;
 }
 h1{
-    margin:30px 0 15px 0;
+    margin:30px 0 30px 0;
 }
 #years p{
     margin:40px 0 40px 0;
@@ -62,17 +62,17 @@ figcaption{
     flex-direction: row;
     justify-content:center;
 }
-#img-workplaces img,#resume img{
+#workplaces img,#resume img{
     filter: brightness(80%);
     border:2px solid #eadeec;
 }
-#img-workplaces img{
+#workplaces img{
     width:40%;
     border-radius: 100%;
     margin:10px 0;
 }
 #resume img{
-    width: 50px;
+    width: 60px;
     background-color: #9eafa4;
     margin:0 5px;
 }
@@ -82,12 +82,12 @@ figcaption{
 #years {
     width:90%;
 }
-#img-workplaces img{
-    width:25%;
+#workplaces img{
+    width:20%;
 }
 /* getting rid of that extra */
 #resume img{
-    width: 60px;
+    width: 50px;
 }
 }
 /* Desktop Responsiveness */
@@ -101,33 +101,38 @@ figcaption{
 #background{
     width:50%;
     display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content: center;
+    flex-direction:column;
+    justify-content:start;
+    align-items: center;
     }
 #years{
     width:100%;
+    margin:0;
 }
 #workplaces{
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:start;
     margin:0;
     width:50%;
 }
-#img-workplaces figure{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-  }
+#workplaces img{
+    width:25%;
+}
+#resume{
+    margin:15px 0;
+}
 }
 @media only screen and (min-width:1300px){
 #background{
-    width:50%;
     display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content: start;
-    margin:0 0 0 30px;
+    flex-direction:column;
+    justify-content: center;
+    }
+#resume{
+    margin:25px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content:end;
     }
 }
