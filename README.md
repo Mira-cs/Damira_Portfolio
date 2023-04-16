@@ -21,44 +21,44 @@ Finally, we have **"My Blog"** page that includes 5 blog posts with dates it was
 
 **4.Sitemap**  
 
-![A picture of the sitemap of my website](./docs/sitemap.png)  
+![A picture of the sitemap of my website](../docs/sitemap.png)  
 
 **5.Screenshots**   
  A preview of the homepage of my website (mobile version):  
 
- ![A preview of the homepage,mobile version](./docs/homepage_mobile.png)  
+ ![A preview of the homepage,mobile version](../homepage_mobile.png)  
    
 Tablet/Desktop versions:  
 
-![A preview of the homepage,tablet/desktop version](./docs/homepage_desktop.png)  
+![A preview of the homepage,tablet/desktop version](../docs/homepage_desktop.png)  
 
 A preview of the "about me" page of my website (mobile version):  
   
-![A preview of the "About me" page,mobile version](./docs/aboutme_mobile.png)  
+![A preview of the "About me" page,mobile version](../docs/aboutme_mobile.png)  
   
 A preview of the "About me" page of my website (tablet/desktop version):  
   
-![A preview of the "About me" page,tablet/desktop version](./docs/aboutme_desktop.png)  
+![A preview of the "About me" page,tablet/desktop version](../docs/aboutme_desktop.png)  
   
 A preview of the "Work&Education" page of my website (mobile version):  
   
-![A preview of the "Work&Education" page,mobile version](./docs/work&education_mobile.png)  
+![A preview of the "Work&Education" page,mobile version](../docs/work&education_mobile.png)  
   
 A preview of the "Work&Education" page of my website (tablet version):  
   
-![A preview of the "Work&Education" page,tablet version](./docs/work&education_tablet.png)  
+![A preview of the "Work&Education" page,tablet version](../docs/work&education_tablet.png)  
   
 A preview of the "Work&Education" page of my website (desktop version):  
 
-![A preview of the "Work&Education" page,desktop version](./docs/work%26education_desktop.png) 
+![A preview of the "Work&Education" page,desktop version](../docs/work%26education_desktop.png) 
 
 A preview of the "My blog" page of my website (mobile version):  
   
-![A preview of the "My blog" page,mobile version](./docs/blog_mobile.png)  
+![A preview of the "My blog" page,mobile version](../docs/blog_mobile.png)  
 
 A preview of the "My blog" page of my website (tablet/desktop version):  
   
-![A preview of the "My blog" page,tablet/desktop version](./docs/blog_desktop.png)  
+![A preview of the "My blog" page,tablet/desktop version](../docs/blog_desktop.png)  
   
 **6.Target Audience**  
   
